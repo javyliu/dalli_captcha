@@ -6,7 +6,7 @@ module DalliCaptcha
       @options = DalliCaptcha.options
 
       @string_key = "#{@options[:dalli_scope]}:#{@captcha_key}:string"
-      @locked_times_key = "#{@options[:dalli_scope]}:#{@captcha_key}:locked_times"
+      #@locked_times_key = "#{@options[:dalli_scope]}:#{@captcha_key}:locked_times"
     end
 
     #set string in memcache
