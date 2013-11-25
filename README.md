@@ -9,7 +9,6 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 * DalliCaptcha is easy to setup, easy to use.
 * DalliCaptcha provides simple captcha that can be read by human.
 * You don't have to manage image files because they will be removed by Tempfile.
-* You can set option `locked_times` and `locked_time` to avoid someone who want to attack.
 * The Captcha will be Expired automatically by setting `expired_time`.
 * ......
 
@@ -20,6 +19,7 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 * Rails > 3.2
 * Dalli > 2.4
 * ImageMagick
+* Memcache
 
 *I haven't tried lower version yet.*
 
@@ -35,7 +35,9 @@ or
 
 **2. Generate initializer**
 
+```shell
     rails g dalli_captcha:install
+```
 
 It'll generate `config/initializers/dalli_captcha.rb`, and you can configure all options here.
 
@@ -117,7 +119,7 @@ First Version
 
 ## Author
 
-* javyquan@gmail.com
+* javy_liu@163.com
 * http://hi.baidu.com/javyquan
 
 
