@@ -28,7 +28,9 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 **1. Add DalliCaptcha to your gemfile**
 
 ```ruby
-gem 'dalli_captcha'
+  gem 'dalli_captcha'
+or
+  gem 'dalli_captcha',:git =>"git://github.com/javyliu/dalli_captcha.git"
 ```
 
 **2. Generate initializer**
