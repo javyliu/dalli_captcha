@@ -9,7 +9,7 @@ module DalliCaptcha
       desc "Copy DalliCaptcha default files"
 
       def copy_initializer
-        copy_file "redis_captcha.rb", "config/initializers/redis_captcha.rb"
+        copy_file "dalli_captcha.rb", "config/initializers/dalli_captcha.rb"
       end
 
       def show_readme
