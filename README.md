@@ -1,5 +1,5 @@
-= DalliCaptcha
-# DalliCaptcha
+dalli_captcha
+=============
 
 DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple captcha that can be read by human.
 
@@ -9,7 +9,6 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 * DalliCaptcha is easy to setup, easy to use.
 * DalliCaptcha provides simple captcha that can be read by human.
 * You don't have to manage image files because they will be removed by Tempfile.
-* You can set option `locked_times` and `locked_time` to avoid someone who want to attack.
 * The Captcha will be Expired automatically by setting `expired_time`.
 * ......
 
@@ -20,6 +19,7 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 * Rails > 3.2
 * Dalli > 2.4
 * ImageMagick
+* Memcache
 
 *I haven't tried lower version yet.*
 
@@ -28,12 +28,16 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 **1. Add DalliCaptcha to your gemfile**
 
 ```ruby
-gem 'dalli_captcha'
+  gem 'dalli_captcha'
+or
+  gem 'dalli_captcha',:git =>"git://github.com/javyliu/dalli_captcha.git"
 ```
 
 **2. Generate initializer**
 
+```shell
     rails g dalli_captcha:install
+```
 
 It'll generate `config/initializers/dalli_captcha.rb`, and you can configure all options here.
 
@@ -99,13 +103,6 @@ to your model.
 
 Enjoy it!
 
-## Preview
-
-![Alt text](http://blog.hellolucky.info/wp-content/uploads/2012/11/dalli_captcha-1.png)
-
-![Alt text](http://blog.hellolucky.info/wp-content/uploads/2012/11/dalli_captcha1.png)
-
-![Alt text](http://blog.hellolucky.info/wp-content/uploads/2012/11/dalli_captcha-2.png)
 
 ## Todo list
 
@@ -115,17 +112,15 @@ Enjoy it!
 
 ## History
 
-**0.8.0**
+**0.0.1**
 
 First Version
 
 
 ## Author
 
-* I'm hellolucky, I come from Taiwan
-* hellolucky123@gmail.com
-* http://twitter.com/hellolucky123
-* http://blog.hellolucky.info
+* javy_liu@163.com
+* http://hi.baidu.com/javyquan
 
 
 ## License

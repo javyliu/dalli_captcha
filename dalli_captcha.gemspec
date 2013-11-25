@@ -9,11 +9,11 @@ Gem::Specification.new do |s|
   s.version     = DalliCaptcha::VERSION
   s.authors     = ["javy_liu"]
   s.email       = ["javy_liu@163.com"]
-  s.homepage    = "http://hi.baidu.com/javyquan"
+  s.homepage    = "https://github.com/javyliu/dalli_captcha"
   s.summary     = "generate captcha by dalli"
   s.description = "generate captcha by dalli,use the memcache"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.6"
