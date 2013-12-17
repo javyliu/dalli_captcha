@@ -15,7 +15,7 @@ DalliCaptcha is a captcha engine base on Dalli for Rails 3.2. It provides simple
 
 ## Requirements
 
-* Ruby >= 1.9
+* Ruby = ree
 * Rails > 3.2
 * Dalli > 2.4
 * ImageMagick
