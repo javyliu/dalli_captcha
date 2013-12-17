@@ -2,9 +2,9 @@
 
 1. Setup "config/initializers/dalli_captcha.rb"
 
-2. Mount RedisCaptcha::Engine in your router.rb
+2. Mount DalliCaptcha::Engine in your router.rb
 
-   mount RedisCaptcha::Engine => '/captcha', :as => :captcha
+   mount DalliCaptcha::Engine => '/captcha', :as => :captcha
 
 3. Add to your controller
 
@@ -12,7 +12,7 @@
 
 4. Add to your model
 
-   include RedisCaptcha::Model
+   include DalliCaptcha::Model
 
 5. If you set "config.active_record.whitelist_attributes = true" in "config/application.rb", remember to add attr_accessible to your model
 
