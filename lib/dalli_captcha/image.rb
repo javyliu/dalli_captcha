@@ -20,7 +20,7 @@ module DalliCaptcha
         params << get_string_param
         params << get_swirl_param
 
-        command = `#{@options[:image_magick_path]}convert #{params} #{tempfile.path}`
+        `#{@options[:image_magick_path]}convert #{params} #{tempfile.path}`
         puts "#{@options[:image_magick_path]}convert #{params} #{tempfile.path}"
 
         tempfile
